@@ -219,17 +219,17 @@ footer {
   width: 100%;
 }
 @media (max-width: 501px) {
-  .home .space-images .sky {
-    display: none;
-  }
-  .home .space-images .launch {
-    display: none;
-  }
   .home .space-images .blast {
     width: 90%;
     margin-top: 10px;
     align-content: center;
     margin: 9px auto;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
   }
 }
 .home .space-images img {

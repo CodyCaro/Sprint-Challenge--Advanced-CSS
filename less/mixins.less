@@ -28,3 +28,64 @@
         color: @bg-color;
     }
 }
+
+.move-down-animation(@duration: 1s) {
+    @keyframes move-down {
+        from {
+            transform: translateY(-60px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    animation-name: move-down;
+    animation-duration: @duration;
+}
+
+.rocket-animation(@duration: 1s) {
+    @keyframes fly-up {
+        0%{
+            transform: translateY(0);
+            transform: translateX(0);
+        }
+        10%{
+            transform: translateX(10px);
+        }
+        15%{
+            transform: translateX(-10px);
+        }
+        20%{
+            transform: translateX(10px);
+        }
+        25%{
+            transform: translateX(-10px);
+        }
+        30%{
+            transform: translateX(10px);
+        }
+        35%{
+            transform: translateX(-10px);
+        }
+        40%{
+            transform: translateX(10px);
+        }
+        45%{
+            transform: translateX(-10px);
+        }
+        50%{
+            transform: translateY(0);
+        }
+        99%{
+            transform: translateY(-750px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+        
+    }
+
+    animation-name: fly-up;
+    animation-duration: @duration;
+}

@@ -252,7 +252,7 @@ footer {
   width: 30%;
   border-radius: 4px;
   border: #22283A 1px solid;
-  transition: background-color color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;

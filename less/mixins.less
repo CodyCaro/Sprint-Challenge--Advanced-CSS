@@ -7,22 +7,24 @@
     align-items: @align;
 }
 
-.flex-column(){
+.flex-column() {
     flex-direction: column;
 }
 
-.custom-button(@color, @width: 83%, @text-color: white, @padding: 15px) {
-    background-color: @color;
+.custom-button(@bg-color: black, @width: 83%, @text-color: white, @padding: 15px, @radius: 12px) {
+    background-color: @bg-color;
     text-align: center;
-    color: white;
+    color: @text-color;
     font-size: 1.75rem;
     padding: @padding;
     width: @width;
-    border-radius: 12px;
+    border-radius: @radius;
+    border: @bg-color 1px solid;
 
-    transition: background-color .5s;
+    transition: background-color color .5s;
 
     &:hover {
-        background-color: darken(@color, 15%);
+        background-color: @text-color;
+        color: @bg-color;
     }
 }

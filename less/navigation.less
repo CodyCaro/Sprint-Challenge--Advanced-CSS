@@ -1,1 +1,37 @@
 // Navigation code here
+@import "mixins.less";
+@import "variables.less";
+
+.navigation {
+    .custom-flex();
+    .flex-column();
+    padding-top: 11px;
+    padding-bottom: 10px;
+    background-color: @wild-sand;
+    border-bottom: solid 2px @sea-shell;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        .move-down-animation(5s);
+    }
+
+    nav {
+        .custom-flex();
+        width: 47%;
+
+        @media @phone{
+            width: 75%;
+        }
+
+        a {
+            font-size: 1.55rem;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: lighten(black, 50%);
+            }
+        }
+    }
+}
